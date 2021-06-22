@@ -1,0 +1,23 @@
+{
+  "name": "tailwind-project-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdjannatulhasan/tailwind-project-01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdjannatulhasan/tailwind-project-01/issues"
+  },
+  "homepage": "https://github.com/mdjannatulhasan/tailwind-project-01#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.2"
+  }
+}
