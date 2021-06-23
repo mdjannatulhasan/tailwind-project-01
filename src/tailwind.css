@@ -5,3 +5,13 @@
 ul.nav li{
     @apply after:mt-1 after:block after:border-t-[3px] after:border-transparent after:w-[40%] after:h-[4px] after:mx-auto hover:after:border-primary hover:text-primary;
 }
+
+.btn-primary{
+    @apply bg-primary px-[36px] py-3 rounded text-white hover:bg-[#dd5800]; 
+}
+.top-bg{
+    background-image: url('../images/bg.svg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
