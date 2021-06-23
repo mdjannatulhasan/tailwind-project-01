@@ -7,15 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="text-[18px]">
-    
-    <div class="top-bg pt-14">
+<body>
+    <div class="top-bg">
         <!-- Header  -->
         <header class="pt-3">
             <div class="container flex justify-between items-center">
                 <a class="block"href="http://"><img src="images/logo.svg" alt="logo"></a>
                 <nav>
-                    <ul class="nav flex space-x-8">
+                    <ul class="nav flex space-x-8 text-[#003049]">
                         <li><a href="http://">Hjem</a></li>
                         <li><a href="http://">Tjenester</a></li>
                         <li><a href="http://">Verksteder</a></li>
@@ -29,20 +28,20 @@
             </div>
         </header>
         <!-- hero section -->
-        <section class="hero pt-14">
+        <section class="hero py-14">
             <div class="container">
-                <div class="grid xl:grid-cols-2 items-center">
-                    <div class="space-y-5">
-                        <h4>
+                <div class="grid xl:grid-cols-2 items-center gap-10">
+                    <div class="space-y-10">
+                        <h4 class="text-primary bg-[#f2672226] px-4 py-1 rounded-lg inline">
                             Welcome to Fixbil
                         </h4>
-                        <h1>
+                        <h1 class="leading-[68px] font-bold text-6xl">
                             Foretrukket Bilverksted i Bergen, Sotra og Askøy
                         </h1>
-                        <p>
+                        <p class="text-justify w-11/12">
                             Fixbil tilbyr verkstedstjenester til konkurransedyktige priser. Våre bilverksteder i Bergen og omegn utfører reperasjoner og service på alle bilmerker. Om du fremdeles har nybilgaranti på bilen din, så blir den ivaretatt hos oss.
                         </p>
-                        <div>
+                        <div class="">
                             <a class="btn-primary" href="">Bestill Service</a>
                         </div>
                     </div>
@@ -53,8 +52,177 @@
             </div>
         </section>
     </div>
-    <section class="ta-service">
-        <h3>Ta service fra oss</h3>
+    <section class="ta-service blue-bg py-20">
+        <div class="container">
+            <h3 class="sec-title text-white ">Ta service fra oss</h3>
+            <p class="title-text">An enim nullam tempor sapien gravida donec enim ipsum porta justo integer at odio velna vitae auctor integer</p>
+            <div class="mt-10">
+                <div class="grid xl:grid-cols-2 gap-x-6 gap-y-8">
+                    <!-- Single Service -->
+                    <div class="grid grid-cols-6 items-center single-service">
+                        <div class="service-icon bg-opacity-10 bg-[#FF6600] col-span-1 justify-center">
+                            <img class="mx-auto" src="images/mekanisk.svg" alt="">
+                        </div>
+                        <div class="single-sevice-body col-span-3">
+                            <h5 class="service-title">Mekanisk</h5>
+                            <p class="service-text">
+                                Bestill service hos din nærmeste verksted
+                            </p>
+                        </div>
+                        <div class="col-span-2">
+                            <a  class="btn-secondary" href="">Bestill her</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Single Service -->
+                    <div class="grid grid-cols-6 items-center single-service">
+                        <div class="service-icon bg-[#E9E7FF] col-span-1">
+                            <img class="mx-auto" src="images/Support (1).svg" alt="">
+                        </div>
+                        <div class="single-sevice-body col-span-3">
+                            <h5 class="service-title">Velg verksted</h5>
+                            <p class="service-text">
+                                Finn ditt nærmeste verksted i Bergen omegn
+                            </p>
+                        </div>
+                        <div class="col-span-2">
+                            <a  class="btn-secondary small-padding" href="">Finn ditt verksted</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Single Service -->
+                    <div class="grid grid-cols-6 items-center single-service">
+                        <div class="service-icon bg-opacity-10 bg-[#00BB98] col-span-1">
+                            <img class="mx-auto" src="images/tilbud.svg" alt="">
+                        </div>
+                        <div class="single-sevice-body col-span-3">
+                            <h5 class="service-title">Få tilbud</h5>
+                            <p class="service-text">
+                                Ta et bilde eller legg inn kontroll seddel for tilbud
+                            </p>
+                        </div>
+                        <div class="col-span-2">
+                            <a  class="btn-secondary" href="">Send her</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Single Service -->
+                    <div class="grid grid-cols-6 items-center single-service">
+                        <div class="service-icon bg-[#FFF0E9] col-span-1">
+                            <img class="mx-auto" src="images/search.svg" alt="">
+                        </div>
+                        <div class="single-sevice-body col-span-3">
+                            <h5 class="service-title">Sjekk EU-Kontroll</h5>
+                            <p class="service-text">
+                                Sjekk når bilen skal inn på EU-kontroll
+                            </p>
+                        </div>
+                        <div class="col-span-2">
+                            <a  class="btn-secondary" href="">Send her</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-20">
+        <div class="container">
+            <h3 class="sec-title">Våre tjenester</h3>
+            <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-14 pt-10">
+                <div class="single-item text-center">
+                    <div>
+                        <img class="mx-auto" src="images/Wrenching.svg" alt="">
+                    </div>
+                    <h5 class="service-title pt-6">Mekanisk</h5>
+                    <p class="pt-3">
+                        Alle biltyper, også nye biler innenfor gjeldende nybilgaranti på din bil.
+                    </p>
+                </div>
+                
+                <div class="single-item text-center">
+                    <div>
+                        <img class="mx-auto" src="images/Electric Car.svg" alt="">
+                    </div>
+                    <h5 class="service-title pt-6">El-Bil</h5>
+                    <p class="pt-3">
+                        Alle biltyper, også nye biler innenfor gjeldende nybilgaranti på din bil.
+                    </p>
+                </div>
+
+                <div class="single-item text-center">
+                    <div>
+                        <img class="mx-auto" src="images/Electric Service.svg" alt="">
+                    </div>
+                    <h5 class="service-title pt-6">Mekanisk</h5>
+                    <p class="pt-3">
+                        Alle biltyper, også nye biler innenfor gjeldende nybilgaranti på din bil.
+                    </p>
+                </div>
+
+                <div class="single-item text-center">
+                    <div>
+                        <img class="mx-auto" src="images/Catalytic.svg" alt="">
+                    </div>
+                    <h5 class="service-title pt-6">Eksos</h5>
+                    <p class="pt-3">
+                        Alle biltyper, også nye biler innenfor gjeldende nybilgaranti på din bil.
+                    </p>
+                </div>
+
+                <div class="single-item text-center">
+                    <div>
+                        <img class="mx-auto" src="images/painting-work.svg" alt="">
+                    </div>
+                    <h5 class="service-title pt-6">Lakkering</h5>
+                    <p class="pt-3">
+                        Alle biltyper, også nye biler innenfor gjeldende nybilgaranti på din bil.
+                    </p>
+                </div>
+
+                <div class="single-item text-center">
+                    <div>
+                        <img class="mx-auto" src="images/karosseri.svg" alt="">
+                    </div>
+                    <h5 class="service-title pt-6">Karosseri</h5>
+                    <p class="pt-3">
+                        Alle biltyper, også nye biler innenfor gjeldende nybilgaranti på din bil.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="" class="btn-primary mt-14">Se flere tjenester</a>
+            </div>
+        </div>
+    </section>
+    <section class="merker bg-[#F9FAFB] py-20">
+        <div class="container">
+            <div class="grid lg:grid-cols-2">
+                <div>
+                    <img class="mx-auto" src="images/service-man.png" alt="">
+                </div>
+                <div class="space-y-6 px-14">
+                    <h3 class="sec-title text-left">Vi tilbyr service på alle merker</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur nisl sodales egestas lobortis.</p>
+                    <div class="grid grid-cols-2">
+                        <div>
+                            <ul class="custom-style">
+                                <li>Utsett faktura</li>
+                                <li>12 verksteder</li>
+                                <li>God på pris!</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="custom-style">
+                                <li>Tesla verksted</li>
+                                <li>Alle bilmerker</li>
+                                <li>El-Bil</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>

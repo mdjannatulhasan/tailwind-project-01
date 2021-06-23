@@ -2,16 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    @apply text-[18px] text-[#4A557C];
+}
+
 ul.nav li{
     @apply after:mt-1 after:block after:border-t-[3px] after:border-transparent after:w-[40%] after:h-[4px] after:mx-auto hover:after:border-primary hover:text-primary;
 }
 
 .btn-primary{
-    @apply bg-primary px-[36px] py-3 rounded text-white hover:bg-[#dd5800]; 
+    @apply bg-primary px-[36px] py-3 rounded text-white hover:bg-[#dd5800] inline-block font-bold; 
 }
 .top-bg{
-    background-image: url('../images/bg.svg');
-    background-size: cover;
-    width: 100%;
+    @apply bg-hero-pattern bg-cover;
+}
+.blue-bg{
+    @apply bg-blue-image bg-cover;
+}
+
+
+.sec-title{
+    @apply text-4xl font-bold text-center py-5 text-black;
+}
+.title-text{
+    @apply text-[rgba(255,255,255,.60)] w-6/12 mx-auto text-center leading-7 pb-9;
+    
+}
+.single-service{
+    @apply bg-white rounded-lg py-7 pl-5;
+}
+.single-sevice-body {
+    @apply px-4;
+}
+.service-icon{
+    @apply w-[80px] h-[80px] rounded-full justify-center items-center flex;
+}
+.service-title{
+    @apply text-2xl font-bold;
+}
+.service-text{
+    @apply text-[#4A557C] pt-3 w-11/12;
+}
+.btn-secondary{
+    @apply border-primary border px-[36px] py-3 rounded text-primary hover:bg-primary justify-center hover:text-white;
+}
+.btn-secondary.small-padding{
+    @apply px-4;
+}
+.single-item{
+    @apply bg-[#EBF5FF] py-12 px-14 rounded-lg;
+}
+
+.merker .sec-title{
+    @apply text-left;
+}
+
+.custom-style li{
+    @apply items-center h-14 items-center flex;
+}
+.custom-style li::before{
+    content: url('../images/vector.svg');
+    padding-right: 15px;
+    display: flex;
     height: 100%;
+    padding-top: 6px;
+    align-items: center;
 }

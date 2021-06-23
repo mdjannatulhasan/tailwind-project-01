@@ -20,7 +20,11 @@ module.exports = {
         primary: '#FF6600',
         body: '#4A557C',
         heading: '#000B33'
-      }
+      },
+      backgroundImage: theme => ({
+        'hero-pattern': "url('../images/bg.svg')",
+        'blue-image': "url('../images/sec-2-bg.svg')",
+       })
     },
   },
   variants: {
