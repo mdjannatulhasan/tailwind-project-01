@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ul.nav li{
+    @apply after:mt-1 after:block after:border-t-[3px] after:border-transparent after:w-[40%] after:h-[4px] after:mx-auto hover:after:border-primary hover:text-primary;
+}
